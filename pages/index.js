@@ -1,6 +1,4 @@
-import React from "react"
 import Head from 'next/head'
-import Blog from "../components/blog"
 
 const App = () => (
     <div>
@@ -12,7 +10,6 @@ const App = () => (
 
         <div>
             <p>head</p>
-            <Blog />
         </div>
     </div>
 )

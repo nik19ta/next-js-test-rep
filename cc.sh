@@ -1,8 +1,6 @@
 #!/bin/bash
 
-echo "import React from 'react'
-
-const styles = {
+echo "const styles = {
     div: {},
     p: {}
 }
