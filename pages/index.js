@@ -1,17 +1,19 @@
 import Head from 'next/head'
+import { MainLayout } from '../components/MainLayout'
 
-const App = () => (
-    <div>
-        <Head>
-            <title>Next App</title>
-            <link rel="icon" href="/favicon.ico" />
-            <link href="/main.css" />
-        </Head>
-
+export default function App() {
+    return (  
+    <MainLayout>
         <div>
-            <p>head</p>
-        </div>
-    </div>
-)
+            <Head>
+                <title>Next App</title>
+                <link rel="icon" href="/favicon.ico" />
+                <link href="/main.css" />
+            </Head>
 
-export default App;
+            
+        </div> 
+    </MainLayout>
+
+    )
+}
