@@ -5,10 +5,10 @@ const styles = {
     p: {}
 }
 
-const NameComponent = () => (
+const Header = () => (
     <div style={styles.div} >
-       <p style={styles.p} >NameComponent</p>
+       <p style={styles.p} >Header</p>
    </div>
 )
 
-export default NameComponent
+export default Header

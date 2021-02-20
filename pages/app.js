@@ -2,12 +2,12 @@ import React from "react"
 import Head from 'next/head'
 import Blog from "../components/blog"
 
-
 const App = () => (
     <div>
         <Head>
             <title>Next App</title>
             <link rel="icon" href="/favicon.ico" />
+            <link href="/main.css" />
         </Head>
 
         <div>
