@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { MainLayout } from '../components/MainLayout'
-
+import News from '../components/News'
+ 
 export default function App() {
     return (  
     <MainLayout>
@@ -10,6 +11,8 @@ export default function App() {
                 <link rel="icon" href="/favicon.ico" />
                 <link href="/main.css" />
             </Head>
+
+        <News />      
         </div> 
     </MainLayout>
 

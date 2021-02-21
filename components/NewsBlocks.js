@@ -1,12 +1,21 @@
+import Grid from '@material-ui/core/Grid';
+
 const styles = {
     div: {},
     p: {}
 }
 
-const NewsBlocks = () => (
-    <div style={styles.div} >
-       <p style={styles.p} >NewsBlocks</p>
-   </div>
+const NewsBlocks = ({ img, title, date }) => (
+    <Grid
+  container
+  direction="column"
+  justify="space-between"
+  alignItems="flex-start"
+>   
+    <dev> {img} </dev>
+    <dev> {title} </dev>
+    <dev> {date} </dev>
+</Grid>
 )
 
 export default NewsBlocks
