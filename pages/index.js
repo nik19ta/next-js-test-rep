@@ -10,8 +10,6 @@ export default function App() {
                 <link rel="icon" href="/favicon.ico" />
                 <link href="/main.css" />
             </Head>
-
-            
         </div> 
     </MainLayout>
 
