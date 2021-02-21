@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { MainLayout } from '../components/MainLayout'
 import News from '../components/News'
+import Events from '../components/Events'
  
 export default function App() {
     return (  
@@ -14,7 +15,8 @@ export default function App() {
                 <link href="/main.css" />
             </Head>
 
-        <News />      
+        <News />  
+        <Events />    
         </div> 
     </MainLayout>
 
