@@ -20,7 +20,7 @@ const styles = {
     }
 
 
-const NewsBlocks = ({ img, title, date }) => (
+const NewsBlocks = ({ img, title, link, date }) => (
     <Grid
   container
   direction="column"
@@ -35,10 +35,8 @@ const NewsBlocks = ({ img, title, date }) => (
     justify="flex-end"
     alignItems="flex-start"
   >
-        <p style={styles.p}> Подробнее &gt; </p>
+        <p> <a style={styles.p} href={ link }>Подробнее &gt;</a></p>
     </Grid>
-
-    {/* <img src={img} style={styles.img} /> */}
     <div> <h3> {title} </h3> </div>
     <div> <p style={styles.date}>{date}</p> </div>
 
