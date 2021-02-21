@@ -1,4 +1,6 @@
 import {Grid, Input} from '@material-ui/core';
+import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
+import MenuIcon from '@material-ui/icons/Menu';
 
 const styles = {
     div: {},
@@ -12,40 +14,24 @@ const Header = () => (
     container
     direction="column"
     justify="space-between"
-    alignItems="center"
-
-    gridGap='90px'
-
-  >
+    alignItems="center" >
+    
+    <div className="figure" > </div>
     <Grid 
       container
       direction="row"
       justify="space-between"
-      alignItems="center" 
-    >
-      <Grid
-        item
-        direction="column"
-        justify="space-between"
-        className="headerLines"
-      >
-        <div className="headerLine" ></div>
-        <div className="headerLine" ></div>
-        <div className="headerLine" ></div>
-      </Grid>
+      alignItems="center" > 
+      <div> <MenuIcon/> </div>
       <div> <img src='/images/logo.png' className="headerLogo" /> </div>
-      <div>Ac</div>
+      <div> <SupervisorAccountIcon/> </div>
     </Grid>
     <Grid
       container
       direction="row"
       justify="center"
-      alignItems="center"
-    >
-      <Grid
-        item xs={12}
-        
-      >
+      alignItems="center" >
+      <Grid item xs={12}>
         <Input
           className="headerSearch"
           fullWidth={true}
