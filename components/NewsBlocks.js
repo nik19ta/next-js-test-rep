@@ -1,9 +1,14 @@
 import Grid from '@material-ui/core/Grid';
+import { StyleRounded } from '@material-ui/icons';
 
 const styles = {
-    div: {},
-    p: {}
-}
+    img: {
+            width: "150px",
+            height: "300px",
+            borderRadius: "5px"
+        }
+    }
+
 
 const NewsBlocks = ({ img, title, date }) => (
     <Grid
@@ -12,10 +17,14 @@ const NewsBlocks = ({ img, title, date }) => (
   justify="space-between"
   alignItems="flex-start"
 >   
-    <dev> {img} </dev>
-    <dev> {title} </dev>
-    <dev> {date} </dev>
+    <div style={{background: `url(${img})`, width: "150px", height: "300px", backgroundSize: "cover"}} />
+
+    {/* <img src={img} style={styles.img} /> */}
+    <div> {title} </div>
+    <div> {date} </div>
+
 </Grid>
+
 )
 
 export default NewsBlocks
