@@ -3,10 +3,20 @@ import { StyleRounded } from '@material-ui/icons';
 
 const styles = {
     img: {
-            width: "150px",
-            height: "300px",
-            borderRadius: "5px"
-        }
+            borderRadius: "10px",
+            width: "200px", 
+            height: "250px", 
+            backgroundSize: "cover",
+            paddingLeft: "10px"
+        },
+    p: {
+        textDecoration: "underline",
+        color: "#FF989B"
+    },
+    date: {
+        color: "#A5A3A1",
+        fontSize: "13px"
+    }
     }
 
 
@@ -14,14 +24,23 @@ const NewsBlocks = ({ img, title, date }) => (
     <Grid
   container
   direction="column"
-  justify="space-between"
+  justify="space-evenly"
   alignItems="flex-start"
+  style={{maxWidth: "50%"}}
 >   
-    <div style={{background: `url(${img})`, width: "150px", height: "300px", backgroundSize: "cover"}} />
+    <Grid
+    style={{background: `url(${img})`, ...styles.img}}
+    container
+    direction="column"
+    justify="flex-end"
+    alignItems="flex-start"
+  >
+        <p style={styles.p}> Подробнее &gt; </p>
+    </Grid>
 
     {/* <img src={img} style={styles.img} /> */}
-    <div> {title} </div>
-    <div> {date} </div>
+    <div> <h3> {title} </h3> </div>
+    <div> <p style={styles.date}>{date}</p> </div>
 
 </Grid>
 
