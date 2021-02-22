@@ -53,3 +53,12 @@ body {
     border-radius: 10% 10% 48% 51% / 0% 0% 55% 55%;
     z-index: -1;
 }
+
+
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    padding: 10px;
+}

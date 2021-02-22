@@ -7,8 +7,9 @@ const styles = {
 }
 
 const Events = () => (
-    <Grid>
-        <h1> События </h1>
+    // <Grid>
+        // <h1> События </h1>
+        <div class="grid">
         <EventsBlocks 
         title={"Закрытая встреча междунородного бизнес сообщества U."} 
         img={{
@@ -22,7 +23,86 @@ const Events = () => (
             text: "Some text",
             link: "link"
         }}/>
-    </Grid>
+        <EventsBlocks 
+        title={"Закрытая встреча междунородного бизнес сообщества U."} 
+        img={{
+                link: "/images/NewsImg.png", 
+                title: "SEO - продвижение бизнесса", 
+                date: "18 Февраля 19:00"
+            }}
+        info="Some text" 
+        button={{
+            isRequired: true,
+            text: "Some text",
+            link: "link"
+        }}/>
+        <EventsBlocks 
+        title={"Закрытая встреча междунородного бизнес сообщества U."} 
+        img={{
+                link: "/images/NewsImg.png", 
+                title: "SEO - продвижение бизнесса", 
+                date: "18 Февраля 19:00"
+            }}
+        info="Some text" 
+        button={{
+            isRequired: true,
+            text: "Some text",
+            link: "link"
+        }}/>
+        <EventsBlocks 
+        title={"Закрытая встреча междунородного бизнес сообщества U."} 
+        img={{
+                link: "/images/NewsImg.png", 
+                title: "SEO - продвижение бизнесса", 
+                date: "18 Февраля 19:00"
+            }}
+        info="Some text" 
+        button={{
+            isRequired: true,
+            text: "Some text",
+            link: "link"
+        }}/>
+        <EventsBlocks 
+        title={"Закрытая встреча междунородного бизнес сообщества U."} 
+        img={{
+                link: "/images/NewsImg.png", 
+                title: "SEO - продвижение бизнесса", 
+                date: "18 Февраля 19:00"
+            }}
+        info="Some text" 
+        button={{
+            isRequired: true,
+            text: "Some text",
+            link: "link"
+        }}/>
+        <EventsBlocks 
+        title={"Закрытая встреча междунородного бизнес сообщества U."} 
+        img={{
+                link: "/images/NewsImg.png", 
+                title: "SEO - продвижение бизнесса", 
+                date: "18 Февраля 19:00"
+            }}
+        info="Some text" 
+        button={{
+            isRequired: true,
+            text: "Some text",
+            link: "link"
+        }}/>
+        <EventsBlocks 
+        title={"Закрытая встреча междунородного бизнес сообщества U."} 
+        img={{
+                link: "/images/NewsImg.png", 
+                title: "SEO - продвижение бизнесса", 
+                date: "18 Февраля 19:00"
+            }}
+        info="Some text" 
+        button={{
+            isRequired: true,
+            text: "Some text",
+            link: "link"
+        }}/>
+        </div>
+    // </Grid>
 )
 
 export default Events
