@@ -36,7 +36,7 @@ const Header = () => (
           className="headerSearch"
           fullWidth={true}
           placeholder="Поиск"
-          disableUnderline="true"
+          disableUnderline={true}
           />
       </Grid>
     </Grid>
