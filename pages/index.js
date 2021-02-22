@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { MainLayout } from '../components/MainLayout'
 import News from '../components/News'
 import Events from '../components/Events'
+import SpecialOffers from '../components/SpecialOffers'
  
 export default function App() {
     return (  
@@ -16,7 +17,9 @@ export default function App() {
             </Head>
 
         <News />  
-        <Events />    
+        <Events /> 
+        <SpecialOffers />
+
         </div> 
     </MainLayout>
 

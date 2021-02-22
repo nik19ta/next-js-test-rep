@@ -5,7 +5,7 @@ const styles = {
     img: {
         img: {
             borderRadius: "10px",
-            width: "85%", 
+            width: "380px", 
             height: "250px", 
             backgroundSize: "cover",
             paddingLeft: "10px"
@@ -29,7 +29,8 @@ const styles = {
         maxWidth: "80%"
     },
     button: {
-        maxWidth: "80%"
+        maxWidth: "80%",
+        margin: "0 auto"
     }
     }
 
@@ -39,7 +40,8 @@ const EventsBlocks = ({ title, img, info, button }) => (
   direction="column"
   justify="space-evenly"
   alignItems="flex-start"
-  style={{maxWidth: "100%"}}
+  xs="12"
+//   style={{maxWidth: "100%"}}
 >   
 
     <p style={styles.title}> { title } </p>
@@ -58,11 +60,14 @@ const EventsBlocks = ({ title, img, info, button }) => (
 
     </Grid>
     <div> <p> {info} </p> </div>
-    <Button 
+    
+
+    {button.isRequired && <Button 
     variant="outlined"
     fullWidth={true}
     style={styles.button}
-    >{ button.text }</Button>
+    >{ button.text }</Button> }
+
 </Grid>
 
 )

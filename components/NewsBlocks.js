@@ -4,7 +4,7 @@ import { StyleRounded } from '@material-ui/icons';
 const styles = {
     img: {
             borderRadius: "10px",
-            width: "100%", 
+            width: "200px", 
             height: "250px", 
             backgroundSize: "cover",
             paddingLeft: "10px"

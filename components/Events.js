@@ -7,9 +7,9 @@ const styles = {
 }
 
 const Events = () => (
-    // <Grid>
-        // <h1> События </h1>
-        <div class="grid">
+    <Grid>
+    <h1> События </h1>
+    <div className="grid">
         <EventsBlocks 
         title={"Закрытая встреча междунородного бизнес сообщества U."} 
         img={{
@@ -32,7 +32,7 @@ const Events = () => (
             }}
         info="Some text" 
         button={{
-            isRequired: true,
+            isRequired: false,
             text: "Some text",
             link: "link"
         }}/>
@@ -102,7 +102,7 @@ const Events = () => (
             link: "link"
         }}/>
         </div>
-    // </Grid>
+    </Grid>
 )
 
 export default Events
