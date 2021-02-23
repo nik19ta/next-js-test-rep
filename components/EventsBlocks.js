@@ -48,8 +48,8 @@ const EventsBlocks = ({ title, img, info, button }) => (
     style={{background: `url(${img.link})`, ...styles.img.img}}
     container
     direction="column"
-    justify="flex-start"
-    alignItems="flex-start"
+    justify="flex-end"
+    alignItems="flex-end"
   >
     
     <div> 

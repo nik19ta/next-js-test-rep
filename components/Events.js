@@ -9,7 +9,8 @@ const styles = {
 const Events = () => (
     <Grid>
     <h1> События </h1>
-    <div className="grid">
+    <div 
+        class="grid" >
         <EventsBlocks 
         title={"Закрытая встреча междунородного бизнес сообщества U."} 
         img={{
