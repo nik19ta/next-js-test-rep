@@ -20,7 +20,7 @@ const styles = {
     }
 }
 
-const SpecialOffersBlocks = ({ img, text }) => (
+const SpecialOffersBlocks = ({ color, img, text }) => (
     <Grid
         container
         direction="column"
@@ -32,7 +32,7 @@ const SpecialOffersBlocks = ({ img, text }) => (
         direction="column"
         justify="space-between"
         alignItems="flex-start"
-        style={{backgroundColor: img.color, ...styles.img.img}}
+        style={{backgroundColor: color, ...styles.img.img}}
         > 
 
         <h6> {img.title.toUpperCase()} </h6>

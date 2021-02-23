@@ -16,6 +16,9 @@ const styles = {
     date: {
         color: "#A5A3A1",
         fontSize: "13px"
+    },
+    h1: {
+        fontSize: "14px"
     }
     }
 
@@ -26,7 +29,7 @@ const NewsBlocks = ({ img, title, link, date }) => (
   direction="column"
   justify="space-evenly"
   alignItems="flex-start"
-  style={{maxWidth: "50%"}}
+  style={{maxWidth: "250px"}}
 >   
     <Grid
     style={{background: `url(${img})`, ...styles.img}}
@@ -37,7 +40,7 @@ const NewsBlocks = ({ img, title, link, date }) => (
   >
         <p> <a style={styles.p} href={ link }>Подробнее &gt;</a></p>
     </Grid>
-    <div> <h3> {title} </h3> </div>
+    <div> <h3 style={styles.h1}> {title} </h3> </div>
     <div> <p style={styles.date}>{date}</p> </div>
 
 </Grid>

@@ -6,14 +6,35 @@ const styles = {
     p: {}
 }
 
+const news = [
+    {
+        img: "/images/NewsImg.png",
+        title: "Мы принимаем участие в научном иследовании ??!",
+        date: "22 декабря 2021 Г.",
+        link: "https://github.com/egorkaBurkenya"
+    },
+    {
+        img: "/images/NewsImg.png",
+        title: "Мы принимаем участие в научном иследовании ??!",
+        date: "22 декабря 2021 Г.",
+        link: "https://github.com/egorkaBurkenya"
+    },
+    {
+        img: "/images/NewsImg.png",
+        title: "Мы принимаем участие в научном иследовании ??!",
+        date: "22 декабря 2021 Г.",
+        link: "https://github.com/egorkaBurkenya"
+    }
+    
+]
+
 const News = () => (
    <Grid>
        <h1> Новости </h1>
        <div className="grid">
-        <NewsBlocks img={"/images/NewsImg.png"} title={"Title"} date={"2020-25-03"}/>
-        <NewsBlocks img={"/images/NewsImg.png"} title={"Title"} date={"2020-25-03"}/>
-        <NewsBlocks img={"/images/NewsImg.png"} title={"Title"} date={"2020-25-03"}/>
-        <NewsBlocks img={"/images/NewsImg.png"} title={"Title"} date={"2020-25-03"}/>
+        {news.map(({img, title, date, link}) => {
+                return ( <NewsBlocks img={img} title={title} date={date} link={link} /> )
+            })}
        </div>
    </Grid>
 )
