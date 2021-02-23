@@ -38,9 +38,8 @@ const EventsBlocks = ({ title, img, info, button }) => (
 <Grid
   container
   direction="column"
-  justify="space-evenly"
+//   justify="space-evenly"
   alignItems="flex-start"
-  xs="12"
 //   style={{maxWidth: "100%"}}
 >   
 
@@ -49,7 +48,7 @@ const EventsBlocks = ({ title, img, info, button }) => (
     style={{background: `url(${img.link})`, ...styles.img.img}}
     container
     direction="column"
-    justify="flex-end"
+    justify="flex-start"
     alignItems="flex-start"
   >
     
