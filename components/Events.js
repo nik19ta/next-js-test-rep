@@ -3,7 +3,7 @@ import EventsBlocks from './EventsBlocks'
 
 const events = [
     {
-        title: "Закрытая встреча междунородного бизнес сообщества U.",
+        title: "Закрытая встреча междунородного бизнес сообщества U. 1",
         img: {
             link: "/images/NewsImg.png", 
             title: "SEO - продвижение бизнесса", 
@@ -17,7 +17,7 @@ const events = [
         }
     },
     {
-        title: "Закрытая встреча междунородного бизнес сообщества U.",
+        title: "Закрытая встреча междунородного бизнес сообщества U",
         img: {
             link: "/images/NewsImg.png", 
             title: "SEO - продвижение бизнесса", 
@@ -31,7 +31,7 @@ const events = [
         }
     },
     {
-        title: "Закрытая встреча междунородного бизнес сообщества U.",
+        title: "Закрытая встреча междунородного бизнес сообщества U 2",
         img: {
             link: "/images/NewsImg.png", 
             title: "SEO - продвижение бизнесса", 
@@ -52,7 +52,7 @@ const Events = () => (
     <Grid className="grid">
             { events.map(({title, img, info, button}) => {
                 return (
-                    <EventsBlocks title={title} img={img} button={button} info={info} />
+                    <EventsBlocks key={title} title={title} img={img} button={button} info={info} />
                 )
             })}
     </Grid>

@@ -9,13 +9,13 @@ const styles = {
 const news = [
     {
         img: "/images/NewsImg.png",
-        title: "Мы принимаем участие в научном иследовании ??!",
+        title: "Мы принимаем участие в научном иследовании ?",
         date: "22 декабря 2021 Г.",
         link: "https://github.com/egorkaBurkenya"
     },
     {
         img: "/images/NewsImg.png",
-        title: "Мы принимаем участие в научном иследовании ??!",
+        title: "Мы принимаем участие в научном иследовании !",
         date: "22 декабря 2021 Г.",
         link: "https://github.com/egorkaBurkenya"
     },
@@ -33,7 +33,7 @@ const News = () => (
        <h1> Новости </h1>
        <Grid className="grid">
         {news.map(({img, title, date, link}) => {
-                return ( <NewsBlocks img={img} title={title} date={date} link={link} /> )
+                return ( <NewsBlocks img={img} key={title} title={title} date={date} link={link} /> )
             })}
        </Grid>
    </Grid>
