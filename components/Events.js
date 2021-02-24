@@ -1,11 +1,6 @@
 import Grid from '@material-ui/core/Grid';
 import EventsBlocks from './EventsBlocks'
 
-const styles = {
-    div: {},
-    p: {}
-}
-
 const events = [
     {
         title: "Закрытая встреча междунородного бизнес сообщества U.",
