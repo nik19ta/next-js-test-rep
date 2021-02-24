@@ -5,7 +5,6 @@ return (
     <>
       <nav>
         <Header />
-
       </nav>
       <main>
         { children }

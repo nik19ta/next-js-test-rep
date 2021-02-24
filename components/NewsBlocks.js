@@ -25,25 +25,24 @@ const styles = {
 
 const NewsBlocks = ({ img, title, link, date }) => (
     <Grid
-  container
-  direction="column"
-  justify="space-evenly"
-  alignItems="flex-start"
-  style={{maxWidth: "250px"}}
->   
-    <Grid
-    style={{background: `url(${img})`, ...styles.img}}
-    container
-    direction="column"
-    justify="flex-end"
-    alignItems="flex-start"
-  >
-        <p> <a style={styles.p} href={ link }>Подробнее &gt;</a></p>
-    </Grid>
-    <div> <h3 style={styles.h1}> {title} </h3> </div>
-    <div> <p style={styles.date}>{date}</p> </div>
+        container
+        direction="column"
+        justify="space-evenly"
+        alignItems="flex-start"
+        style={{maxWidth: "250px"}} >
 
-</Grid>
+        <Grid
+        style={{background: `url(${img})`, ...styles.img}}
+        container
+        direction="column"
+        justify="flex-end"
+        alignItems="flex-start" >
+            <p> <a style={styles.p} href={ link }>Подробнее &gt;</a></p>
+        </Grid>
+        
+        <div> <h3 style={styles.h1}> {title} </h3> </div>
+        <div> <p style={styles.date}>{date}</p> </div>
+    </Grid>
 
 )
 

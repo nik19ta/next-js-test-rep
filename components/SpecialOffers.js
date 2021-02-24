@@ -47,7 +47,7 @@ const colors = {
 const SpecialOffers = () => (
     <Grid>
         <h1>Специальные Предложения</h1>
-        <div className="grid">
+        <Grid className="grid">
             {specialoffers.map(({img, text}) => {
                 colors.num = !colors.num
                 return (
@@ -57,9 +57,8 @@ const SpecialOffers = () => (
                     text={text}
                 />
                 )
-            })}
-        
-    </div>
+            })}  
+        </Grid>
      </Grid>
 )
 

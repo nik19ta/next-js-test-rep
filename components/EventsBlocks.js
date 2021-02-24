@@ -35,39 +35,34 @@ const styles = {
     }
 
 const EventsBlocks = ({ title, img, info, button }) => (
-<Grid
-  container
-  direction="column"
-//   justify="space-evenly"
-  alignItems="flex-start"
-//   style={{maxWidth: "100%"}}
->   
-
-    <p style={styles.title}> { title } </p>
     <Grid
-    style={{background: `url(${img.link})`, ...styles.img.img}}
     container
     direction="column"
-    justify="flex-end"
-    alignItems="flex-end"
-  >
-    
-    <div> 
-        <h1 style={styles.img.title}> {img.title} </h1>
-        <p style={styles.img.date}> {img.date} </p> 
-    </div>
+    alignItems="flex-start" >
+        
+        <p style={styles.title}> { title } </p>
+        <Grid
+        style={{background: `url(${img.link})`, ...styles.img.img}}
+        container
+        direction="column"
+        justify="flex-end"
+        alignItems="flex-end" >
+        
+        <div> 
+            <h1 style={styles.img.title}> {img.title} </h1>
+            <p style={styles.img.date}> {img.date} </p> 
+        </div>
 
+        </Grid>
+
+        <div> <p> {info} </p> </div>
+        
+        {button.isRequired && <Button 
+        variant="outlined"
+        fullWidth={true}
+        style={styles.button}
+        >{ button.text }</Button> }
     </Grid>
-    <div> <p> {info} </p> </div>
-    
-
-    {button.isRequired && <Button 
-    variant="outlined"
-    fullWidth={true}
-    style={styles.button}
-    >{ button.text }</Button> }
-
-</Grid>
 
 )
 

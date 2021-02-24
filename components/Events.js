@@ -49,14 +49,13 @@ const events = [
 const Events = () => (
     <Grid>
     <h1> События </h1>
-    <div 
-        class="grid" >
+    <Grid className="grid">
             { events.map(({title, img, info, button}) => {
                 return (
                     <EventsBlocks title={title} img={img} button={button} info={info} />
                 )
             })}
-        </div>
+    </Grid>
     </Grid>
 )
 

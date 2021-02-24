@@ -10,13 +10,12 @@ const styles = {
 const Header = () => (
   <Grid 
     className="headerContainer"
-
     container
     direction="column"
     justify="space-between"
     alignItems="center" >
     
-    <div className="figure" > </div>
+    <div className="figure" ></div>
     <Grid 
       container
       direction="row"

@@ -25,25 +25,23 @@ const SpecialOffersBlocks = ({ color, img, text }) => (
         container
         direction="column"
         justify="center"
-        alignItems="center"
-    >
+        alignItems="center" >
         <Grid
         container
         direction="column"
         justify="space-between"
         alignItems="flex-start"
-        style={{backgroundColor: color, ...styles.img.img}}
-        > 
+        style={{backgroundColor: color, ...styles.img.img}} > 
 
         <h6> {img.title.toUpperCase()} </h6>
      
         <Grid>
-        <h3> {img.sale.title1.toUpperCase()} </h3>
-        <h3 style={styles.title2} > {img.sale.title2.toUpperCase()} </h3>         
+            <h3> {img.sale.title1.toUpperCase()} </h3>
+            <h3 style={styles.title2} > {img.sale.title2.toUpperCase()} </h3>         
         </Grid>
         
         </Grid>
-    <p style={styles.p} > {text} </p>
+        <p style={styles.p} > {text} </p>
     </Grid>
 )
 

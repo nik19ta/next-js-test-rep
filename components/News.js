@@ -31,11 +31,11 @@ const news = [
 const News = () => (
    <Grid>
        <h1> Новости </h1>
-       <div className="grid">
+       <Grid className="grid">
         {news.map(({img, title, date, link}) => {
                 return ( <NewsBlocks img={img} title={title} date={date} link={link} /> )
             })}
-       </div>
+       </Grid>
    </Grid>
 )
 
