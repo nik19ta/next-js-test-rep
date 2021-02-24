@@ -16,6 +16,7 @@ const Header = () => (
     alignItems="center" >
     
     <div className="figure" ></div>
+
     <Grid 
       container
       direction="row"
@@ -25,11 +26,13 @@ const Header = () => (
       <div> <img src='/images/logo.png' className="headerLogo" /> </div>
       <div> <SupervisorAccountIcon/> </div>
     </Grid>
+
     <Grid
       container
       direction="row"
       justify="center"
       alignItems="center" >
+
       <Grid item xs={12}>
         <Input
           className="headerSearch"
@@ -38,6 +41,7 @@ const Header = () => (
           disableUnderline={true}
           />
       </Grid>
+      
     </Grid>
   </Grid>
 )

@@ -38,15 +38,16 @@ const EventsBlocks = ({ title, img, info, button }) => (
     <Grid
     container
     direction="column"
-    alignItems="flex-start" >
-        
+    alignItems="flex-start">
+
         <p style={styles.title}> { title } </p>
+
         <Grid
         style={{background: `url(${img.link})`, ...styles.img.img}}
         container
         direction="column"
         justify="flex-end"
-        alignItems="flex-end" >
+        alignItems="flex-end">
         
         <div> 
             <h1 style={styles.img.title}> {img.title} </h1>
@@ -57,11 +58,14 @@ const EventsBlocks = ({ title, img, info, button }) => (
 
         <div> <p> {info} </p> </div>
         
-        {button.isRequired && <Button 
+        {button.isRequired && 
+        <Button 
         variant="outlined"
         fullWidth={true}
-        style={styles.button}
-        >{ button.text }</Button> }
+        style={styles.button}>
+            { button.text } 
+        </Button> }
+        
     </Grid>
 
 )

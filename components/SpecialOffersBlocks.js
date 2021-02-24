@@ -26,6 +26,7 @@ const SpecialOffersBlocks = ({ color, img, text }) => (
         direction="column"
         justify="center"
         alignItems="center" >
+            
         <Grid
         container
         direction="column"

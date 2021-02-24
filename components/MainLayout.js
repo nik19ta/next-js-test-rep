@@ -9,7 +9,6 @@ return (
       <main>
         { children }
       </main>
-      <style jsx gloabl>{``}</style>
     </>
   )
 }
