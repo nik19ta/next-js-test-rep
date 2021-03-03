@@ -22,9 +22,9 @@ const Header = () => (
       direction="row"
       justify="space-between"
       alignItems="center" > 
-      <div> <MenuIcon/> </div>
-      <div> <img src='/images/logo.png' className="headerLogo" /> </div>
-      <div> <SupervisorAccountIcon/> </div>
+      <div> <MenuIcon width="25px" height="25px"  /> </div>
+      <div> <img src='/images/logo.png' width="25px" height="25px" alt="logo" className="headerLogo" /> </div>
+      <div> <SupervisorAccountIcon width="25px" height="25px" /> </div>
     </Grid>
 
     <Grid

@@ -48,7 +48,7 @@ const events = [
 
 const Events = () => (
     <Grid>
-    <h1> События </h1>
+    <h2> События </h2>
     <Grid className="grid">
             { events.map(({title, img, info, button}) => {
                 return (
